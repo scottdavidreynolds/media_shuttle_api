@@ -1,0 +1,22 @@
+{
+  "name": "media_shuttle_api",
+  "version": "1.13.3",
+  "description": "Signiants_Media_Shuttle_Management_API_endpoints_allows_you_to_automate_portal_and_storage_management_and_view_active_transfers_using_your_own_web_applications_The_System_to_Person_API_allows_you_to_create_upload_and_download_links_directly_from_other_applications_letting_you_accelerate_file_transfers_through_Media_Shuttle_For_more_information_about_getting_started_with_the_Media_Shuttle_API_read_our__Getting_Started_Guide_httpdeveloper_signiant_commsapigetting_started_html____You_can_test_API_endpoints_using_your_Media_Shuttle_subscription_by_generating_an_API_key_from_your_IT_Administration_user_menu_in_the_Developer_section_Once_you_have_generated_an_API_key_click_the_Authorize_button_and_enter_your_API_key_in_the_Value_field_and_click_Authorize_to_enable_the_examples_",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.7.0",
+    "querystring": "0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}

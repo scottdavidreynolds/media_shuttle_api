@@ -1,0 +1,26 @@
+# MediaShuttleApi.PackageTokenResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **String** | The token identifier | [optional] 
+**url** | **String** | The URL that the user should navigate to in order to perform the transfer. | [optional] 
+**createdOn** | **Date** |  | [optional] 
+**expiresOn** | **Date** | The date/time the transfer token expires and is no longer valid.  | [optional] 
+**user** | **Object** | The user who will be issued the token allowing them to upload or download package files  | [optional] 
+**grants** | **[String]** | The permissions to be granted to the user who will be issued the token. Currently, permission grants are limited to one per token, however, we are reserving the property type as an array for future use in which we envision multiple grants being allowed.  | [optional] 
+**destinationPath** | **String** | The subdirectory on the portal where the files will be uploaded. Valid for upload grants on share portals only.  | [optional] 
+**notifications** | **[Object]** | Request notifications for token lifecycle events. Supported events are: - tokenRedeemed: When the token is redeemed. - package.upload.complete: When a package upload is complete. - package.download.complete: When a package download is complete.  User actions will fire more than one event. For example, successfully uploading content to a package will trigger a package.upload.complete event and a tokenRedeemed event.  | [optional] 
+
+
+<a name="[GrantsEnum]"></a>
+## Enum: [GrantsEnum]
+
+
+* `upload` (value: `"upload"`)
+
+* `download` (value: `"download"`)
+
+
+
+
